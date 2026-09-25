@@ -1,0 +1,80 @@
+#
+# Hardcore Scaling Configuration
+#
+
+[worldserver]
+
+#
+#    HardcoreScaling.Enable
+#        Description: Enable NPC health and damage scaling.
+#        Default:     1 (Enabled)
+#
+
+HardcoreScaling.Enable = 1
+
+#
+#    HardcoreScaling.HealthMultiplier
+#        Description: Health multiplier applied to eligible creatures.
+#                     1.25 = +25% health. 1.0 = normal health.
+#        Default:     1.25
+#
+
+HardcoreScaling.HealthMultiplier = 1.25
+
+#
+#    HardcoreScaling.DamageMultiplier
+#        Description: Damage multiplier applied to all creature damage (melee, spells, abilities).
+#                     1.30 = +30% damage. 1.0 = normal damage.
+#        Default:     1.30
+#
+
+HardcoreScaling.DamageMultiplier = 1.30
+
+#
+#    HardcoreScaling.Expansion
+#        Description: Target expansion filter.
+#                     0  = Classic/Vanilla (Level 1-60 content)
+#                     1  = The Burning Crusade (Level 61-70 content)
+#                     2  = Wrath of the Lich King (Level 71-80 content)
+#                     -1 = All creatures across all expansions
+#        Default:     0
+#
+
+HardcoreScaling.Expansion = 0
+
+#
+#    HardcoreScaling.ScheduleMode
+#        Description: When should hardcore stat scaling be active?
+#                     0 = Always active (both day & night)
+#                     1 = Night Only (active only during nighttime hours)
+#                     2 = Day Only (active only during daytime hours)
+#        Default:     1 (Night Only)
+#
+
+HardcoreScaling.ScheduleMode = 1
+
+#
+#    HardcoreScaling.NightStartHour
+#        Description: Hour when night starts (0 - 23, 20 = 8:00 PM).
+#        Default:     20
+#
+
+HardcoreScaling.NightStartHour = 20
+
+#
+#    HardcoreScaling.NightEndHour
+#        Description: Hour when night ends / dawn arrives (0 - 23, 6 = 6:00 AM).
+#        Default:     6
+#
+
+HardcoreScaling.NightEndHour = 6
+
+#
+#    HardcoreScaling.FastClockSpeed
+#        Description: Speed multiplier for servers using accelerated day/night cycles.
+#                     0.0 = Real server clock.
+#                     3.0 = Match mod-fast-day-night (4-hour day / 4-hour night cycle).
+#        Default:     0.0
+#
+
+HardcoreScaling.FastClockSpeed = 0.0
